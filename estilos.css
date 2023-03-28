@@ -1,0 +1,144 @@
+*{
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     vertical-align: baseline;
+}
+
+body{
+     text-align: center;
+     font-family: sans-serif;
+     background-image: url(imgs/fondo1.jpg) ;
+     background-size: cover;
+     background-repeat: no-repeat;
+     
+}
+
+.header{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.head{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 63px;
+     background: #171717;
+     position: fixed;
+     width: 100%;
+     z-index: 100;
+}
+
+.navbar{
+     display: flex;
+     margin-right: 10px;
+}
+
+
+
+.navbar a {
+     display: block;
+     padding: 23px 20px;
+     color: #fff;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 20px;
+    
+
+}
+
+.navbar a:hover{
+     background-color: darkgrey;
+}
+
+.header{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.header{
+     height: 60vh;
+    
+
+}
+
+.title{
+     margin-bottom: 40px;
+     font-size: 60px;
+     font-weight: 600;
+     text-transform: uppercase;
+     color: #fa0000;
+}
+
+p{
+     margin-bottom: 60px;
+     font-size: 18px;
+    
+}
+
+.content{
+     height: 50vh;
+     display: flex;
+}
+.milogo{
+     width: 600px;
+}
+.pago{
+     padding: 50px 0 100px 0;
+     text-align: center;
+}
+.precio1{
+     display: flex;
+     justify-content: space-between;
+     margin-top: 70px;
+
+}
+.price{
+     padding: 35px;
+     margin: 0 15px;
+     border-radius: 25px;
+     box-shadow:0 0 20px rgba(248, 243, 243, 0.873) ;
+}
+
+.price h3{
+     font-size: 20px;
+     color: #fa0505;
+     margin-bottom: 10px;
+}
+
+.precio{
+     font-size: 45px !important;
+     font-weight: 800;
+     color:#9c27b0;
+}
+.price p{
+     font-size: 15px;
+     color: #fff;
+}
+.boton1{
+     display: inline-block;
+     padding: 10px 35px;
+     background-color:rgb(255, 17, 0);
+     color: #fff;
+     border-radius: 25px;
+
+ 
+}
+.titleN{
+     display: flex;
+     margin-right: 20px;
+     font-size: 60px;
+     font-weight: 600;
+     text-transform: uppercase;
+     color: red;
+}
+.nts{
+     font-size: 15px;
+     color: #fff;
+     text-align: center;
+     justify-content: center;
+     
+}
