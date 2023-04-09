@@ -6,31 +6,45 @@
     <title>hello world </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    
-    <div class="head"> 
-        <div >    
-        </div>
+    <section class="cabezar">
+        <div class="menu conteiner">
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imgs/menu.png" class="menu-icon" alt="menus">
+            </label>
+            <nav  class="navbar">
 
-        <nav  class="navbar">
-            <a href="#">inicio</a>
-            <a href="#">cursos</a>
-            <a href="#">tienda</a>
-            <a href="#">nosotros</a>
-            <a href="#">contacto</a>
-        </nav>
-    </div>
+                <ul>
+                   <li><a href="#">inicio</a></li>
+                   <li><a href="#curso">cursos</a></li>
+                   <li><a href="#">tienda</a></li>
+                   <li><a href="#nosotros">nosotros</a></li>
+                   <li><a href="#contactor">contacto</a></li>
+    
+                </ul>
+            </nav>
+        </div>   
+    </section>
+    
     <header class="content header">
         <div >
-            
-         <img class="milogo" src="/imgs/logodef.png" alt="loguito">
+            <br>
+            <br> <br>
+            <br><br>
+            <br>
+
+        
                
 
         </div> 
     </header>
     <section class="nts-content">
-        <div class="nosotros">
+        <div class="nosotros1"></div>
+        <div class="nosotros" id="nosotros">
             <h2 class="titleN" >nosotros</h2>
             <p class="nts">Somos una Escuela de Tatuadores y Perforadores con sede en Buenos Aires, Argentina.
             Nos destacamos en formar profesionales del arte corporal, a su vez Somos fabricantes de Máquinas y Fuentes para Tatuaje.
@@ -39,12 +53,10 @@
             Cursos presenciales y a distancia.
             </p>
         </div>
-        <div class="nts1">
-
-        </div>
+        
     </section>
     <section class="pago-conteiner">
-        <h2 class="title"> cursos</h2>
+        <h2 class="title" id="curso"> cursos</h2>
         
         <div class="precio1">
             <div class="price">
@@ -78,6 +90,49 @@
             </div>
         </div>
     </section>
+    <section class="contacto" id="contactor">
+        <div class="contacto-info container">
+            <h2>contacto</h2>
+
+        </div>
+        <div class="contacto-txt">
+            <div class="telefono-txt">
+                <h4>telefono</h4>
+                <p>(+54)11-xxxx-xxxx</p>
+                <p>0800 xxx-skin(7546)</p>
+            </div>
+            <div class="horarios-txt">
+                <h4>horarios</h4>
+                <p>luneas a viernes de 08:00 a 23:00</p>
+                <p>sabado y domingo de 08:00 a 16:00</p>
+            </div>
+            <div class="redes-txt">
+                <h4>redes sociales</h4>
+                <div class="sociales">
+                    <a href="#">
+                        <div class="social">
+                            <img src="imgs/s1.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                            <img src="imgs/s2.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                            <img src="imgs/s3.svg" alt="">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footy">
+        <p>inkskin© by Emanuel Casavieja</p>
+    </footer>
     
 </body>
 </html>

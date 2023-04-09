@@ -3,7 +3,8 @@
      padding: 0;
      border: 0;
      font-size: 100%;
-     vertical-align: baseline;
+     box-sizing: border-box;
+     text-decoration: none;
 }
 
 body{
@@ -15,40 +16,57 @@ body{
      
 }
 
+.conteiner{
+     max-width: 1200px;
+     margin: 0 auto;
+}
 .header{
      display: flex;
      justify-content: center;
      align-items: center;
 }
-
-.head{
+.menu{
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
      display: flex;
      align-items: center;
      justify-content: space-between;
-     height: 63px;
-     background: #171717;
-     position: fixed;
-     width: 100%;
-     z-index: 100;
+     z-index: 1000;
 }
+.menu .navbar ul li{
+     position: relative;
+     float: left;
+}
+.menu .navbar ul li a{
+     font-size: 18px;
+     padding: 20px;
+     color:#fff;
+     display: block;
+     text-transform: uppercase;
+}
+.menu .navbar ul li a:hover{
+     color: #fa0000;
+}
+#menu{
+     display: none;
+}
+.menu-icon{
+     width: 25px;
+}
+.menu label{
+     cursor: pointer;
+     display: none;
+}
+
 
 .navbar{
      display: flex;
-     margin-right: 10px;
+     
+     
 }
 
-
-
-.navbar a {
-     display: block;
-     padding: 23px 20px;
-     color: #fff;
-     text-decoration: none;
-     text-transform: uppercase;
-     font-size: 20px;
-    
-
-}
 
 .navbar a:hover{
      background-color: darkgrey;
@@ -58,6 +76,11 @@ body{
      display: flex;
      justify-content: center;
      align-items: center;
+     background-image: url(imgs/logodef.png);
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+
 }
 .header{
      height: 60vh;
@@ -66,6 +89,7 @@ body{
 }
 
 .title{
+     font-family: 'Goudy Bookletter 1911', serif;
      margin-bottom: 40px;
      font-size: 60px;
      font-weight: 600;
@@ -76,6 +100,7 @@ body{
 p{
      margin-bottom: 60px;
      font-size: 18px;
+     font-family: 'Goudy Bookletter 1911', serif;
     
 }
 
@@ -94,9 +119,11 @@ p{
      display: flex;
      justify-content: space-between;
      margin-top: 70px;
+     background-color: rgba(0, 0, 0, 0.6);
 
 }
 .price{
+     font-family: 'Goudy Bookletter 1911', serif;
      padding: 35px;
      margin: 0 15px;
      border-radius: 25px;
@@ -107,38 +134,139 @@ p{
      font-size: 20px;
      color: #fa0505;
      margin-bottom: 10px;
+     text-transform: uppercase;
 }
 
 .precio{
+     text-transform: uppercase;
      font-size: 45px !important;
      font-weight: 800;
      color:#9c27b0;
 }
 .price p{
-     font-size: 15px;
+     font-size: 16px;
      color: #fff;
 }
 .boton1{
+     font-family: 'Goudy Bookletter 1911', serif;
+     text-transform: uppercase;
      display: inline-block;
      padding: 10px 35px;
      background-color:rgb(255, 17, 0);
      color: #fff;
      border-radius: 25px;
+     text-decoration: none;
 
  
 }
-.titleN{
+.nts-content{
      display: flex;
-     margin-right: 20px;
-     font-size: 60px;
-     font-weight: 600;
-     text-transform: uppercase;
-     color: red;
-}
-.nts{
-     font-size: 15px;
-     color: #fff;
-     text-align: center;
-     justify-content: center;
      
+}
+.nosotros1{
+     background-image: url(imgs/nts/f5.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 50%;
+     
+}
+.nosotros{
+     margin-right: 50px;
+     width: 50%;
+     
+
+}
+.titleN{
+     
+     font-family: 'Goudy Bookletter 1911', serif;font-size: 100px;
+     color: #fa0000;
+     line-height: 100px;
+     text-transform: uppercase;
+     letter-spacing: 0px;
+     margin-top: 20px;
+     
+}
+
+.nts{
+     font-family: 'Goudy Bookletter 1911', serif;
+     font-size: 36px;
+     color: #fff;
+     margin: 25px 0px;
+}
+.contacto{
+     padding: 100px 0 ;
+     background-color: #0d0d0d;
+}
+.contacto-info h2{
+     font-size: 75px;
+     color: #fff;
+     font-weight: 800;
+     text-decoration: none;
+     text-transform: uppercase;
+     margin-bottom: 50px;
+
+}
+.contacto-txt{
+     display: flex;
+     justify-content: space-between;
+}
+.contacto-txt h4{
+     font-size: 18px;
+     color: #a7a7a7;
+     margin-bottom: 30px;
+     text-transform: uppercase;
+}
+.contacto-txt p{
+      font-size: 18px;
+      color: #a7a7a7;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+}
+.sociales {
+     display: flex;
+     
+}
+.social {
+     margin: 0 10px;
+     height: 40px;
+     width: 40px;
+     border: 1px solid #fa0000;
+     border-radius: 50px;
+     display: flex;
+}
+.social:hover{
+     background-color: #c71111;
+}
+.social img{
+ margin: 25%;
+}
+.footy{
+     color: #fff;
+     font-size: 18px;
+     margin: 0 ;
+     padding: 0;
+     background-color: #0d0d0d;
+}
+     
+@media(max-width: 991px){
+     .menu {
+          padding: 20px;
+     }
+     .menu label{
+          display: initial;
+     }
+     .menu .navbar{
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background-color: #1f1f1f;
+          display: none;
+     }
+     .menu .navbar ul li{
+          width: 100px;
+     }
+     #menu:checked ~ .navbar{
+          display: initial;
+     }
 }
