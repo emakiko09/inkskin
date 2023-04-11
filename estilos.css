@@ -224,7 +224,7 @@ p{
      background-color: #0d0d0d;
 }
      
-@media(max-width: 991px){
+@media screen and (max-width: 991px){
      .menu {
           padding: 20px;
      }
@@ -255,26 +255,23 @@ p{
           align-items: center;
           text-align: center;
           padding: 0px;
+          width: auto;
      }
      .nosotros1{
-          width: 100px;
+          width: auto;
           padding: 0;
           
      }
-     .nosotros1 img {
-          width: 350px;
-     }
-     
      .precio1{
           padding: 0 30px;
-          flex-direction: column;
-          
+          flex-direction: column;    
      }
      .price{
           margin-bottom: 35px;
+          width: auto;
      }
      .contacto-txt{
-          pad: 30px;
+          padding: 30px;
           flex-direction: column;
           align-items: center;
      }
