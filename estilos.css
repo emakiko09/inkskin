@@ -10,7 +10,7 @@
 body{
      text-align: center;
      font-family: sans-serif;
-     background-image: url(imgs/fondo1.jpg) ;
+     background-image: url(imgs/fondo\ nuevo.jpg) ;
      background-size: cover;
      background-repeat: no-repeat;
      
@@ -21,9 +21,15 @@ body{
      margin: 0 auto;
 }
 .header{
+     height: 60vh;
      display: flex;
-     justify-content: center;
+     justify-content: space-between;
      align-items: center;
+     background-image: url(imgs/logodef.png);
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+    
 }
 .menu{
      position: absolute;
@@ -32,7 +38,7 @@ body{
      right: 0;
      display: flex;
      align-items: center;
-     justify-content: space-between;
+     
      z-index: 1000;
 }
 .menu .navbar ul li{
@@ -43,7 +49,7 @@ body{
      font-size: 18px;
      padding: 20px;
      color:#fff;
-     display: block;
+     display: flex;
      text-transform: uppercase;
 }
 .menu .navbar ul li a:hover{
@@ -58,34 +64,6 @@ body{
 .menu label{
      cursor: pointer;
      display: none;
-}
-
-
-.navbar{
-     display: flex;
-     
-     
-}
-
-
-.navbar a:hover{
-     background-color: darkgrey;
-}
-
-.header{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background-image: url(imgs/logodef.png);
-     background-position: center;
-     background-size: contain;
-     background-repeat: no-repeat;
-
-}
-.header{
-     height: 60vh;
-    
-
 }
 
 .title{
@@ -105,7 +83,7 @@ p{
 }
 
 .content{
-     height: 50vh;
+     height: 50%;
      display: flex;
 }
 .milogo{
@@ -164,10 +142,8 @@ p{
      
 }
 .nosotros1{
-     background-image: url(imgs/nts/f5.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
      width: 50%;
+     margin-left: 0;
      
 }
 .nosotros{
@@ -264,9 +240,42 @@ p{
           display: none;
      }
      .menu .navbar ul li{
-          width: 100px;
+          width: 50px;
+          float: none;
      }
      #menu:checked ~ .navbar{
           display: initial;
+     }
+     .header{
+          flex-direction: column;
+          padding: 80px 30px;
+     }
+     .nts-content{
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 0px;
+     }
+     .nosotros1{
+          width: 100px;
+          padding: 0;
+          
+     }
+     .nosotros1 img {
+          width: 350px;
+     }
+     
+     .precio1{
+          padding: 0 30px;
+          flex-direction: column;
+          
+     }
+     .price{
+          margin-bottom: 35px;
+     }
+     .contacto-txt{
+          pad: 30px;
+          flex-direction: column;
+          align-items: center;
      }
 }
